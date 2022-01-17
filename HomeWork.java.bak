@@ -1,9 +1,3 @@
-/**
- * Java 1. Homework 1
- * 
- * @author Aleksandr
- * @version 17.01.2022
- */
 class HomeWork {
     public static void main(String[] args) {
         printThreeWords();
