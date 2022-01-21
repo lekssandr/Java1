@@ -6,33 +6,23 @@
  */
  class Lesson2HomeWork {
     public static void main(String[] args) {
-        within10and20(15, 3);
+        iswithin10and20(15, 3);
         isPositiveOrNegative(15);
         isNegative(0);
         printWordNTimes(10, "Java 1. Homework 2");
-        }
-    static boolean within10and20(int a, int b) {
-        int sum = a + b;
-        if (sum >= 10 && sum <= 20) {
-            return true;
-        } else {
-            return false;
-        }
     }
+    static boolean iswithin10and20(int a, int b) {
+        return a + b >= 10 && a + b <= 20;
+    }
+    
     static void isPositiveOrNegative(int a) {
-        if (a < 0) {
-            System.out.println("Negative");
-        } else {
-            System.out.println("Positive");
-        }
+        System.out.println (a >= 0? "Positive" : "Negative");
     }
+    
     static boolean isNegative (int a) {
-        if (a < 0) {
-            return true;
-        } else{
-            return false;
-        }
+        return (a < 0);
     }
+    
     static void printWordNTimes(int a, String b) {
         for (int i = 0; i < a; i++){
             System.out.println (b);
