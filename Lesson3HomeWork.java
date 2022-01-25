@@ -2,7 +2,7 @@
  * Java 1. Homework 3
  * 
  * @author Aleksandr
- * @version 21.01.2022
+ * @version 25.01.2022
  */
  import java.util.Arrays;
  
@@ -51,8 +51,9 @@
         int[][] arrFour = new int[5][5];
         for (int i = 0; i < arrFour.length; i++) {
             arrFour[i][i] = 1;
+            arrFour[i][arrFour.length - i - 1] = 1;
         }
-        Arrays.stream(arrFour).map(Arrays::toString).forEach(System.out::println);
+        System.out.println(Arrays.deepToString(arrFour));
     }
     
     static int [] returnArray(int a, int b) {
